@@ -5,7 +5,10 @@
         <nav>
           <ul class="menu">
             <li class="menu-item">
-              <nuxt-link class="nav-link" to="">Posts</nuxt-link>
+              <nuxt-link class="nav-link" to="/">Home</nuxt-link>
+            </li>
+            <li class="menu-item">
+              <nuxt-link class="nav-link" to="/postslist">Posts</nuxt-link>
             </li>
             <li class="menu-item">
               <nuxt-link class="nav-link" to="">Comments</nuxt-link>
@@ -32,6 +35,7 @@
 <style scoped>
 header {
     margin: 20px;
+    text-align: center;
 }
 
 ul.menu {

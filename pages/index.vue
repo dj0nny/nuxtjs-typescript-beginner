@@ -31,11 +31,6 @@ export default class index extends Vue { }
 
 
 <style>
-body {
-  font-family: 'Montserrat';
-  text-align: center;
-}
-
 .title {
   margin: 20px
 }

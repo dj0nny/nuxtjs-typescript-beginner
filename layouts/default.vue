@@ -21,8 +21,6 @@ export default class Default extends Vue {}
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -32,11 +30,21 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
 }
 
 .button--green {

@@ -63,27 +63,3 @@ export interface Company {
   catchPhrase: string;
   bs: string;
 }
-
-export interface PostsResponse {
-  posts: (Post)[]
-}
-
-export interface CommentsResponse {
-  comments: (Comment)[]
-}
-
-export interface AlbumsResponse {
-  albums: (Album)[]
-}
-
-export interface PhotosResponse {
-  photos: (Photo)[]
-}
-
-export interface TodosResponse {
-  todos: (Todo)[]
-}
-
-export interface UsersResponse {
-  users: (User)[]
-}
