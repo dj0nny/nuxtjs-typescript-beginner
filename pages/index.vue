@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div class="col-md-12">
       <Logo></Logo>
       <h1 class="title">
@@ -9,8 +9,8 @@
         A NuxtJS + Typescript app for beginners
       </h2>
       <div class="links">
-        <nuxt-link to="#" target="_blank" class="button--green">Start</nuxt-link>
-        <a href="https://github.com/dj0nny/nuxtjs-typescript-beginner" target="_blank" class="button--grey" >GitHub</a>
+        <!-- <nuxt-link to="#" target="_blank" class="button--green">Start</nuxt-link> -->
+        <a href="https://github.com/dj0nny/nuxtjs-typescript-beginner" target="_blank" class="button--grey" >GitHub repository</a>
       </div>
     </div>
   </div>
@@ -43,6 +43,10 @@ body {
 .subtitle {
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+.links {
+  margin-top: 50px;
 }
 
 </style>

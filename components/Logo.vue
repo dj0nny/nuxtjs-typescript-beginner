@@ -6,6 +6,11 @@
 
 
 <style scoped>
+  .VueToNuxtLogo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   img {
     width: 50%
   }
