@@ -11,7 +11,7 @@
               <nuxt-link class="nav-link" to="/postslist">Posts</nuxt-link>
             </li>
             <li class="menu-item">
-              <nuxt-link class="nav-link" to="">Comments</nuxt-link>
+              <nuxt-link class="nav-link" to="/commentslist">Comments</nuxt-link>
             </li>
             <li class="menu-item">
               <nuxt-link class="nav-link" to="">Albums</nuxt-link>

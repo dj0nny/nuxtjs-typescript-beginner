@@ -1,19 +1,20 @@
 <template>
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title">{{ post.title }}</h5>
-      <p class="card-text">{{ post.body }}</p>
+      <h5 class="card-title">{{ comment.name }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ comment.email }}</h6>
+      <p class="card-text">{{ comment.body }}</p>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import { Post } from '../api/models';
+import { Comment } from '../api/models';
 
 @Component
-export default class PostPreview extends Vue {
-  @Prop() post?: Post
+export default class CommentPreview extends Vue {
+  @Prop() comment?: Comment
 }
 </script>
 
