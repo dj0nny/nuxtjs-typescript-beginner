@@ -23,7 +23,7 @@
               <nuxt-link class="nav-link" to="">Todos</nuxt-link>
             </li>
             <li class="menu-item">
-              <nuxt-link class="nav-link" to="">Users</nuxt-link>
+              <nuxt-link class="nav-link" to="/userslist">Users</nuxt-link>
             </li>
           </ul>
         </nav>

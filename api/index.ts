@@ -14,3 +14,8 @@ export async function fetchComments() {
   const res = await JSONPlaceHolderAPI.get('/comments')
   return res.data
 }
+
+export async function fetchUsers() {
+  const res = await JSONPlaceHolderAPI.get('/users')
+  return res.data
+}
