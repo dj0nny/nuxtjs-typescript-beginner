@@ -8,10 +8,10 @@
               <nuxt-link class="nav-link" to="/">Home</nuxt-link>
             </li>
             <li class="menu-item">
-              <nuxt-link class="nav-link" to="/postslist">Posts</nuxt-link>
+              <nuxt-link class="nav-link" to="/posts">Posts</nuxt-link>
             </li>
             <li class="menu-item">
-              <nuxt-link class="nav-link" to="/commentslist">Comments</nuxt-link>
+              <nuxt-link class="nav-link" to="/comments">Comments</nuxt-link>
             </li>
             <li class="menu-item">
               <nuxt-link class="nav-link" to="">Albums</nuxt-link>
@@ -23,7 +23,7 @@
               <nuxt-link class="nav-link" to="">Todos</nuxt-link>
             </li>
             <li class="menu-item">
-              <nuxt-link class="nav-link" to="/userslist">Users</nuxt-link>
+              <nuxt-link class="nav-link" to="/users">Users</nuxt-link>
             </li>
           </ul>
         </nav>
