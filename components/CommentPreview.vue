@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import { Comment } from '../api/models';
+import { Comment } from '@/api/models';
 
 @Component
 export default class CommentPreview extends Vue {

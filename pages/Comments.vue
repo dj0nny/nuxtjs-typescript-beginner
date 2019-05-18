@@ -13,7 +13,7 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 import * as API from '@/api'
-import { Comment } from '../api/models';
+import { Comment } from '@/api/models';
 
 import CommentPreview from '@/components/CommentPreview.vue'
 import Loading from '@/components/Loading.vue'
