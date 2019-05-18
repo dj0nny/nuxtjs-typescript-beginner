@@ -25,7 +25,7 @@ import Loading from '@/components/Loading.vue'
     Loading
   }
 })
-export default class CommentsList extends Vue {
+export default class Comments extends Vue {
   comments: Comment[] = []
   loading: boolean = false
 

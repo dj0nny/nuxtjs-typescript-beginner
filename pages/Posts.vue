@@ -24,7 +24,7 @@ import Loading from '@/components/Loading.vue'
     Loading
   }
 })
-export default class PostsList extends Vue {
+export default class Posts extends Vue {
   posts: Post[] = []
   loading: boolean = false
 

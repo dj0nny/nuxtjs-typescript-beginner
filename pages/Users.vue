@@ -25,7 +25,7 @@ import Loading from '@/components/Loading.vue'
     Loading
   }
 })
-export default class UsersList extends Vue {
+export default class Users extends Vue {
   users: User[] = []
   loading: boolean = false
 
