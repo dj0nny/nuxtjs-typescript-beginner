@@ -19,3 +19,8 @@ export async function fetchUsers() {
   const res = await JSONPlaceHolderAPI.get('/users')
   return res.data
 }
+
+export async function fetchPhotos() {
+  const res = await JSONPlaceHolderAPI.get('/photos')
+  return res.data
+}
