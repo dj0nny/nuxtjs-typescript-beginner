@@ -28,3 +28,8 @@ export async function fetchTodos() {
   const res = await JSONPlaceHolderAPI.get('/todos')
   return res.data
 }
+
+export async function fetchAlbums() {
+  const res = await JSONPlaceHolderAPI.get('/albums')
+  return res.data
+}
