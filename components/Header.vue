@@ -20,7 +20,7 @@
               <nuxt-link class="nav-link" to="/photos">Photos</nuxt-link>
             </li>
             <li class="menu-item">
-              <nuxt-link class="nav-link" to="">Todos</nuxt-link>
+              <nuxt-link class="nav-link" to="/todos">Todos</nuxt-link>
             </li>
             <li class="menu-item">
               <nuxt-link class="nav-link" to="/users">Users</nuxt-link>

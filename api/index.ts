@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { Post, Comment } from './models';
 
 export const JSONPlaceHolderAPI = axios.create({
   baseURL: 'https://jsonplaceholder.typicode.com'
@@ -22,5 +21,10 @@ export async function fetchUsers() {
 
 export async function fetchPhotos() {
   const res = await JSONPlaceHolderAPI.get('/photos')
+  return res.data
+}
+
+export async function fetchTodos() {
+  const res = await JSONPlaceHolderAPI.get('/todos')
   return res.data
 }
