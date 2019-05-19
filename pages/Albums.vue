@@ -2,7 +2,7 @@
   <section>
     <h1>Albums</h1>
     <Loading v-if="!loading"></Loading>
-    <div class="row">
+    <div class="row" v-if="loading">
       <div class="col-md-4" v-for="album in albums" :key="album.id">
         <AlbumPreview :album="album"></AlbumPreview>
       </div>

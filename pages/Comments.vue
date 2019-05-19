@@ -2,7 +2,7 @@
   <section>
     <h1>Comments</h1>
     <Loading v-if="!loading"></Loading>
-    <div class="row">
+    <div class="row" v-if="loading">
       <div class="col-md-4" v-for="comment in comments" :key="comment.id">
         <CommentPreview :comment="comment"></CommentPreview>
       </div>

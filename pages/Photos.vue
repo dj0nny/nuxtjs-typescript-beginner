@@ -2,7 +2,7 @@
   <section>
     <h1>Phtos</h1>
     <Loading v-if="!loading"></Loading>
-    <div class="row">
+    <div class="row" v-if="loading">
       <div class="col-md-4" v-for="photo in photos" :key="photo.id">
         <PhotoPreview :photo="photo"></PhotoPreview>
       </div>
@@ -28,9 +28,11 @@ import PhotoPreview from '@/components/PhotoPreview.vue'
 })
 export default class Photos extends Vue {
   photos?: Photo[] = []
+  loading: boolean = false
 
   async created() {
     this.photos = await API.fetchPhotos()
+    this.loading = true
   }
 }
 </script>

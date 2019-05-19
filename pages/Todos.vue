@@ -2,7 +2,7 @@
   <section>
     <h1>Todos</h1>
     <Loading v-if="!loading"></Loading>
-    <div class="row">
+    <div class="row" v-if="loading">
       <div class="col-md-12">
         <ul class="list-group">
           <TodoPreview v-for="todo in todos" :key="todo.id" :todo="todo"></TodoPreview>
