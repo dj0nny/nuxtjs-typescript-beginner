@@ -21,7 +21,7 @@ export async function fetchUsers() {
 
 export async function fetchPhotos() {
   const res = await JSONPlaceHolderAPI.get('/photos')
-  return res.data
+  return res.data.slice(0, 21)
 }
 
 export async function fetchTodos() {

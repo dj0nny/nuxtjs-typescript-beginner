@@ -1,6 +1,6 @@
 <template>
   <div class="media">
-    <img :src="photo.thumbnail" class="mr-3" :alt="photo.alt">
+    <img :src="photo.thumbnailUrl" class="mr-3" :alt="photo.alt">
     <div class="media-body">
       {{ photo.title }}
     </div>
@@ -17,4 +17,9 @@ export default class PhotoPreview extends Vue {
 }
 </script>
 
+<style>
+.media {
+  margin-top: 50px
+}
 
+</style>
