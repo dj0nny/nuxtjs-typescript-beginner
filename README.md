@@ -1,5 +1,6 @@
 # nuxtjs-typescript-beginner
 
+[![Build Status](https://travis-ci.org/dj0nny/nuxtjs-typescript-beginner.svg?branch=develop)](https://travis-ci.org/dj0nny/nuxtjs-typescript-beginner)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![npm version](https://badge.fury.io/js/nuxt.svg)](https://badge.fury.io/js/nuxt)
 [![npm version](https://badge.fury.io/js/typescript.svg)](https://badge.fury.io/js/typescript)
