@@ -1,12 +1,18 @@
 # nuxtjs-typescript-beginner
 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+[![npm version](https://badge.fury.io/js/nuxt.svg)](https://badge.fury.io/js/nuxt)
+[![npm version](https://badge.fury.io/js/typescript.svg)](https://badge.fury.io/js/typescript)
+[![types](https://img.shields.io/badge/types-Typescript-blue.svg)](https://img.shields.io/badge/types-Typescript-blue.svg)
+
+
 > A NuxtJS + Typescript app for beginners
 
 ![](https://cdn-images-1.medium.com/max/2600/1*Pfa4uR2nDfhvjXeg6B5hrg.png)
 
 ## A framework for a framework? 😕
 
-Yes, __Nuxt.js__ is a framework for Vue.js that is built over Vue. Nuxt provides a lot of functionalities that are not included in Vue, for example the __server-side rendering__, the creation of __static site__ from a Vue application and you can also use Nuxt for creating single side application
+Yes, __Nuxt.js__ is a framework for Vue.js that is built over Vue. Nuxt provides a lot of functionalities that are not included in Vue, for example the __server-side rendering__, the creation of __static site__ from a Vue application and you can also use Nuxt for developing single page application.
 
 ## Getting Started
 
@@ -35,14 +41,23 @@ yarn dev
 ```
 for running the Nuxt developent server. It will be up and running at this address: http://localhost:3000.
 
-## Deployment
+<!-- ## Deployment
 
 You can also create a build version of this repository running the command:
 ```bash
 npm run build
 # OR
 yarn build
-```
+``` -->
+
+## Next Version
+
+- [x] Initial setup
+- [x] Pages and components
+- [x] Fetch data from API
+- [ ] Add relations between the data
+- [ ] SEO 
+- [ ] Deploy the app on [Netlify](https://www.netlify.com)
 
 
 ## Built With
@@ -51,8 +66,6 @@ yarn build
 * [TypeScript](https://www.typescriptlang.org/) - Javascript based-type language
 * [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator) - Typescript decorators for Vue.js components
 * [JSONPlaceholder](http://jsonplaceholder.typicode.com/) - Fake Online REST API for Testing and Prototyping 
-
-
 
 ## Contributing
 
