@@ -3,10 +3,7 @@
     <div class="card-body">
       <h5 class="card-title">{{ user.name }}</h5>
       <h6 class="card-subtitle mb-2 text-muted">{{ user.username }}</h6>
-      <p class="card-text">{{ user.email }}</p>
-      <p class="card-text">{{ user.phone }}</p>
-      <p class="card-text">{{ user.website }}</p>
-      <a href="#" class="card-link">View Profile</a>
+      <nuxt-link :to="'/profile/' + user.id" class="card-link">View Profile</nuxt-link>
     </div>
   </div>
 </template>
@@ -16,15 +13,15 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
 import { User } from '@/api/models';
 
 @Component
-export default class CommentPreview extends Vue {
+export default class UserPreview extends Vue {
   @Prop() user?: User
 }
 </script>
 
-<style>
+<style scoped>
 .card {
   max-width: 290px;
-  min-height: 200px;
+  min-height: 100px;
   margin-bottom: 20px;
 }
 

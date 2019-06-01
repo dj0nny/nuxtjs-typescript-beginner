@@ -33,3 +33,8 @@ export async function fetchAlbums() {
   const res = await JSONPlaceHolderAPI.get('/albums')
   return res.data
 }
+
+export async function fetchUserById(id?: string) {
+  const res = await JSONPlaceHolderAPI.get("/users?id=" + `${id}`);
+  return res.data[0];
+}
