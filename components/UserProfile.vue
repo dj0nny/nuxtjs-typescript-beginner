@@ -27,21 +27,31 @@
         <TodoPreview v-for="item2 in userTods" :key="item2.id" :todo="item2"></TodoPreview>
       </ul>
     </div>
+    <div class="col-md-12 albums">
+      <h2>{{profile.name}}'s albums</h2>
+      <div class="row">
+        <div class="col-md-4 album" v-for="item3 in userAlbums" :key="item3.id">
+          <AlbumPreview :album="item3"></AlbumPreview>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
 import * as API from '@/api/index'
-import { User, Post, Todo } from '@/api/models'
+import { User, Post, Todo, Album } from '@/api/models'
 
 import PostPreview from '@/components/PostPreview.vue'
 import TodoPreview from '@/components/TodoPreview.vue'
+import AlbumPreview from '@/components/AlbumPreview.vue'
 
 @Component({
   components: {
     PostPreview,
-    TodoPreview
+    TodoPreview,
+    AlbumPreview
   }
 })
 export default class UserProfile extends Vue { 
@@ -50,12 +60,13 @@ export default class UserProfile extends Vue {
   profile: User[] = []
   userPosts: Post[] = []
   userTods: Todo[] = []
+  userAlbums: Album[] = []
 
   async created() {
     this.profile = await API.fetchUserById(this.id)
     this.userPosts = await API.fetchUserPosts(this.id)
     this.userTods = await API.fetchUserTodos(this.id)
-    console.log(this.userTods)
+    this.userAlbums = await API.fetchUserAlbums(this.id)    
   }
 
 }
@@ -68,11 +79,11 @@ export default class UserProfile extends Vue {
   min-height: 100px;
 }
 
-.posts, .todos {
+.posts, .todos, .albums {
     margin-top: 20px;
 }
 
-.posts h2, .todos h2 {
+.posts h2, .todos h2, .albums h2 {
     margin-bottom: 30px;
 }
 </style>

@@ -48,3 +48,8 @@ export async function fetchUserTodos(id?: string) {
   const res = await JSONPlaceHolderAPI.get("/todos?userId=" + `${id}`)
   return res.data
 }
+
+export async function fetchUserAlbums(id?:string) {
+  const res = await JSONPlaceHolderAPI.get("/albums?userId=" + `${id}`)
+  return res.data
+}
