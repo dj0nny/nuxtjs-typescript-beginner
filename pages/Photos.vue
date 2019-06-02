@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Phtos</h1>
+    <h1>Photos</h1>
     <Loading v-if="!loading"></Loading>
     <div class="row" v-if="loading">
       <div class="col-md-4" v-for="photo in photos" :key="photo.id">

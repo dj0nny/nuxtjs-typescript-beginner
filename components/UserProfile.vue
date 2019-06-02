@@ -13,23 +13,38 @@
         </ul>
       </div>
     </div>
+    <div class="col-md-12 comments">
+      <h2>{{profile.name}}'s comments</h2>
+      <div class="row">
+        <div class="col-md-4 comment" v-for="item in userComments" :key="item.id">
+          <CommentPreview :comment="item"></CommentPreview>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
 import * as API from '@/api/index'
-import { User } from '@/api/models'
+import { User, Comment } from '@/api/models'
 
-@Component
+import CommentPreview from '@/components/CommentPreview.vue'
+
+@Component({
+  components: {
+    CommentPreview
+  }
+})
 export default class UserProfile extends Vue { 
   @Prop() id?: string
   
   profile: User[] = []
+  userComments: Comment[] = []
 
   async created() {
     this.profile = await API.fetchUserById(this.id)
-    console.log(this.profile)
+    this.userComments = await API.fetchUserComments(this.id)
   }
 
 }
@@ -40,6 +55,14 @@ export default class UserProfile extends Vue {
   margin-left: auto;
   margin-right: auto;
   min-height: 100px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments h2 {
+    margin-bottom: 30px;
 }
 </style>
 

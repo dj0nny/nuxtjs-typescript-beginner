@@ -16,3 +16,12 @@ export default class AlbumPreview extends Vue {
   @Prop() album?: Album
 }
 </script>
+
+<style scoped>
+.card {
+    max-width: 290px;
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+</style>
+

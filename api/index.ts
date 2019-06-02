@@ -38,3 +38,8 @@ export async function fetchUserById(id?: string) {
   const res = await JSONPlaceHolderAPI.get("/users?id=" + `${id}`);
   return res.data[0];
 }
+
+export async function fetchUserComments(id?: string) {
+  const res = await JSONPlaceHolderAPI.get("/posts?userId=" + `${id}`)
+  return res.data
+}
