@@ -58,3 +58,8 @@ export async function fetchAlbumPhotos(id?: string) {
   const res = await JSONPlaceHolderAPI.get("/photos?albumId=" + `${id}`)
   return res.data
 }
+
+export async function fetchPostComments(id?: string) {
+  const res = await JSONPlaceHolderAPI.get("/comments?postId=" + `${id}`)
+  return res.data
+}
