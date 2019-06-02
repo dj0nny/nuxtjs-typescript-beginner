@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">{{ album.title }}</h5>
-      <a href="#" class="card-link">View album</a>
+      <nuxt-link :to="'/album/' + album.id" class="card-link">View album</nuxt-link>
     </div>
   </div>
 </template>
