@@ -13,11 +13,11 @@
         </ul>
       </div>
     </div>
-    <div class="col-md-12 comments">
-      <h2>{{profile.name}}'s comments</h2>
+    <div class="col-md-12 posts">
+      <h2>{{profile.name}}'s posts</h2>
       <div class="row">
-        <div class="col-md-4 comment" v-for="item in userComments" :key="item.id">
-          <CommentPreview :comment="item"></CommentPreview>
+        <div class="col-md-4 post" v-for="item in userPosts" :key="item.id">
+          <PostPreview :post="item"></PostPreview>
         </div>
       </div>
     </div>
@@ -27,24 +27,25 @@
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
 import * as API from '@/api/index'
-import { User, Comment } from '@/api/models'
+import { User, Post } from '@/api/models'
 
-import CommentPreview from '@/components/CommentPreview.vue'
+import PostPreview from '@/components/PostPreview.vue'
 
 @Component({
   components: {
-    CommentPreview
+    PostPreview
   }
 })
 export default class UserProfile extends Vue { 
   @Prop() id?: string
   
   profile: User[] = []
-  userComments: Comment[] = []
+  userPosts: Post[] = []
 
   async created() {
     this.profile = await API.fetchUserById(this.id)
-    this.userComments = await API.fetchUserComments(this.id)
+    this.userPosts = await API.fetchUserPosts(this.id)
+    console.log(this.userPosts)
   }
 
 }
@@ -57,11 +58,11 @@ export default class UserProfile extends Vue {
   min-height: 100px;
 }
 
-.comments {
+.posts {
     margin-top: 20px;
 }
 
-.comments h2 {
+.posts h2 {
     margin-bottom: 30px;
 }
 </style>
