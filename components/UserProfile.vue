@@ -21,19 +21,27 @@
         </div>
       </div>
     </div>
+    <div class="col-md-12 todos">
+      <h2>{{profile.name}}'s todos</h2>
+      <ul class="list-group">
+        <TodoPreview v-for="item2 in userTods" :key="item2.id" :todo="item2"></TodoPreview>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
 import * as API from '@/api/index'
-import { User, Post } from '@/api/models'
+import { User, Post, Todo } from '@/api/models'
 
 import PostPreview from '@/components/PostPreview.vue'
+import TodoPreview from '@/components/TodoPreview.vue'
 
 @Component({
   components: {
-    PostPreview
+    PostPreview,
+    TodoPreview
   }
 })
 export default class UserProfile extends Vue { 
@@ -41,11 +49,13 @@ export default class UserProfile extends Vue {
   
   profile: User[] = []
   userPosts: Post[] = []
+  userTods: Todo[] = []
 
   async created() {
     this.profile = await API.fetchUserById(this.id)
     this.userPosts = await API.fetchUserPosts(this.id)
-    console.log(this.userPosts)
+    this.userTods = await API.fetchUserTodos(this.id)
+    console.log(this.userTods)
   }
 
 }
@@ -58,11 +68,11 @@ export default class UserProfile extends Vue {
   min-height: 100px;
 }
 
-.posts {
+.posts, .todos {
     margin-top: 20px;
 }
 
-.posts h2 {
+.posts h2, .todos h2 {
     margin-bottom: 30px;
 }
 </style>

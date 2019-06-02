@@ -43,3 +43,8 @@ export async function fetchUserPosts(id?: string) {
   const res = await JSONPlaceHolderAPI.get("/posts?userId=" + `${id}`)
   return res.data
 }
+
+export async function fetchUserTodos(id?: string) {
+  const res = await JSONPlaceHolderAPI.get("/todos?userId=" + `${id}`)
+  return res.data
+}
