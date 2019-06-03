@@ -33,5 +33,11 @@ export default class Posts extends Vue {
     this.loading = true
   }
 
+  head() {
+    return {
+      title: 'Posts | NuxtJS + Typescript'
+    }
+  }
+
 }
 </script>

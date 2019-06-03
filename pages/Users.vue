@@ -33,6 +33,13 @@ export default class Users extends Vue {
     this.users = await API.fetchUsers()
     this.loading = true
   }
+
+  head() {
+    return {
+      title: 'Users | NuxtJS + Typescript'
+    }
+  }
+
 }
 
 </script>

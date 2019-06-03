@@ -68,6 +68,13 @@ export default class UserProfile extends Vue {
     this.userTods = await API.fetchUserTodos(this.id)
     this.userAlbums = await API.fetchUserAlbums(this.id)    
   }
+  
+  head() {
+    return {
+      title: `${this.profile.name}`
+    }
+  }
+
 
 }
 </script>

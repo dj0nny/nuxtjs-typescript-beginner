@@ -34,5 +34,11 @@ export default class Albums extends Vue {
     this.albums = await API.fetchAlbums()
     this.loading = true
   }
+
+  head() {
+    return {
+      title: 'Albums | NuxtJS + Typescript'
+    }
+  }
 }
 </script>

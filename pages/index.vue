@@ -25,7 +25,13 @@ import Logo from '@/components/Logo.vue'
     Logo
   }
 })
-export default class index extends Vue { }
+export default class index extends Vue {
+  head() {
+    return {
+      title: 'NuxtJS + Typescript app for beginners'
+    }
+  }
+}
 
 </script>
 

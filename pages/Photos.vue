@@ -34,5 +34,12 @@ export default class Photos extends Vue {
     this.photos = await API.fetchPhotos()
     this.loading = true
   }
+
+    head() {
+    return {
+      title: 'Photos | NuxtJS + Typescript'
+    }
+  }
+
 }
 </script>

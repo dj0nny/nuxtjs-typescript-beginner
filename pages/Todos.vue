@@ -35,5 +35,12 @@ export default class Todos extends Vue {
     this.todos = await API.fetchTodos()
     this.loading = true
   }
+
+    head() {
+    return {
+      title: 'Todos | NuxtJS + Typescript'
+    }
+  }
+
 }
 </script>

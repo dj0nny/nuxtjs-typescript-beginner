@@ -34,5 +34,11 @@ export default class Comments extends Vue {
     this.loading = true
   }
 
+    head() {
+    return {
+      title: 'Comments | NuxtJS + Typescript'
+    }
+  }
+
 }
 </script>
