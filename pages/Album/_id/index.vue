@@ -14,7 +14,5 @@ import Album from '@/components/Album.vue'
     Album
   }
 })
-export default class index extends Vue {
-
-}
+export default class index extends Vue { }
 </script>

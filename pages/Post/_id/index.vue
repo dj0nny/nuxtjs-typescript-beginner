@@ -14,7 +14,5 @@ import Thread from '@/components/Thread.vue'
     Thread
   }
 })
-export default class index extends Vue {
-
-}
+export default class index extends Vue { }
 </script>
