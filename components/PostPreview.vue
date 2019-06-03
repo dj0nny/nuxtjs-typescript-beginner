@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'nuxt-property-decorator'
+import { Vue, Component, Prop } from 'vue-property-decorator'
 import { Post } from '@/api/models';
 
 @Component

@@ -39,7 +39,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'nuxt-property-decorator'
+import { Vue, Component, Prop } from 'vue-property-decorator'
 import * as API from '@/api/index'
 import { User, Post, Todo, Album } from '@/api/models'
 
@@ -69,11 +69,11 @@ export default class UserProfile extends Vue {
     this.userAlbums = await API.fetchUserAlbums(this.id)    
   }
   
-  head() {
-    return {
-      title: `${this.profile.name}`
-    }
-  }
+  // head() {
+  //   return {
+  //     title: `${this.profile.name}`
+  //   }
+  // }
 
 
 }

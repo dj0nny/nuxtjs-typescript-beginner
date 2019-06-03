@@ -65,7 +65,7 @@ yarn build
 
 * [Nuxt.js](https://nuxtjs.org/) - A Vue.js framework
 * [TypeScript](https://www.typescriptlang.org/) - Javascript based-type language
-* [nuxt-property-decorator](https://github.com/nuxt-community/nuxt-property-decorator) - Typescript decorators for Nuxt.js components
+* [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator) - Typescript decorators for Vue.js components
 * [JSONPlaceholder](http://jsonplaceholder.typicode.com/) - Fake Online REST API for Testing and Prototyping 
 
 ## Contributing
