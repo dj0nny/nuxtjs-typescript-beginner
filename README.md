@@ -56,8 +56,8 @@ yarn build
 - [x] Initial setup
 - [x] Pages and components
 - [x] Fetch data from API
-- [ ] Add relations between the data
-- [ ] SEO 
+- [x] Add relations between the data
+- [x] SEO 
 - [ ] Deploy the app on [Netlify](https://www.netlify.com)
 
 
