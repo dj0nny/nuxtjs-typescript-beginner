@@ -4,15 +4,21 @@
   </div>
 </template>
 
+<script lang="ts">
+import { Vue, Component } from 'nuxt-property-decorator'
+
+@Component
+export default class Logo extends Vue { }
+</script>
 
 <style scoped>
-  .VueToNuxtLogo {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+.VueToNuxtLogo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-  img {
-    width: 50%
-  }
+img {
+  width: 50%
+}
 </style>
 
