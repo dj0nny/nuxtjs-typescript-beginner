@@ -41,7 +41,7 @@ npm run serve
 # OR
 yarn dev
 ```
-for running the Nuxt developent server. It will be up and running at this address: http://localhost:3000.
+for running the Nuxt development server. It will be up and running at this address: http://localhost:3000.
 
 ## Deployed version
 
