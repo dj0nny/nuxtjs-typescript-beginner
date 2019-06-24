@@ -1,6 +1,7 @@
 # nuxtjs-typescript-beginner
 
 [![Build Status](https://travis-ci.org/dj0nny/nuxtjs-typescript-beginner.svg?branch=develop)](https://travis-ci.org/dj0nny/nuxtjs-typescript-beginner)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ce989fd-7725-43c8-859c-a0eccda87a9a/deploy-status)](https://app.netlify.com/sites/gallant-ardinghelli-7be730/deploys)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![npm version](https://badge.fury.io/js/nuxt.svg)](https://badge.fury.io/js/nuxt)
 [![npm version](https://badge.fury.io/js/typescript.svg)](https://badge.fury.io/js/typescript)
@@ -42,14 +43,9 @@ yarn dev
 ```
 for running the Nuxt developent server. It will be up and running at this address: http://localhost:3000.
 
-<!-- ## Deployment
+## Deployed version
 
-You can also create a build version of this repository running the command:
-```bash
-npm run build
-# OR
-yarn build
-``` -->
+There is a deployed version of this repository on [Netlify](https://netlify.com) at this URL: https://gallant-ardinghelli-7be730.netlify.com/
 
 ## Next Version
 
@@ -58,7 +54,7 @@ yarn build
 - [x] Fetch data from API
 - [x] Add relations between the data
 - [x] SEO 
-- [ ] Deploy the app on [Netlify](https://www.netlify.com)
+- [x] Deploy the app on [Netlify](https://www.netlify.com)
 
 
 ## Built With
